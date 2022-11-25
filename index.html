@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>REST-Countries</title>
+  </head>
+  <body>
+    <!--Start of Header Section -->
+    <header>
+      <div class="container">
+        <h2>Where in the world?</h2>
+        <div class="theme">
+          <i class="fa-regular fa-sun"></i>
+          <span>Light Mode</span>
+        </div>
+      </div>
+    </header>
+    <!-- End of Header -->
+    <!-- Start of Main -->
+    <div class="container">
+      <main>
+        <!-- Start of Nav -->
+        <nav>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              id="search"
+              placeholder="Search for a country..."
+            />
+          </div>
+          <div class="select">
+            <select name="filter" id="filter">
+              Filter by Region
+            </select>
+          </div>
+        </nav>
+        <!-- End of Nav -->
+        <!-- Start of Section -->
+        <section></section>
+        <!-- End of Section -->
+      </main>
+    </div>
+    <!-- End of Main -->
+
+    <!-- Script -->
+    <script src="./JS/main.js"></script>
+  </body>
+</html>
