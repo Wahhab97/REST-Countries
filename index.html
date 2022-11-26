@@ -24,7 +24,7 @@
     <title>REST-Countries</title>
   </head>
   <body>
-    <!--Start of Header Section -->
+    <!-- Start of Header -->
     <header>
       <div class="container">
         <h2>Where in the world?</h2>
@@ -50,19 +50,81 @@
           </div>
           <div class="select">
             <select name="filter" id="filter">
-              Filter by Region
+              <option value="" disabled selected hidden>
+                Filter by Region
+              </option>
             </select>
+            <ul class="options hidden">
+              <li data-value="africa">Africa</li>
+              <li data-value="america">America</li>
+              <li data-value="america">America</li>
+              <li data-value="europe">Europe</li>
+              <li data-value="oceania">Oceania</li>
+            </ul>
           </div>
         </nav>
         <!-- End of Nav -->
         <!-- Start of Section -->
-        <section></section>
+        <section>
+          <div>
+            <img src="https://flagcdn.com/w320/co.png" alt="colombia flag" />
+            <div class="info">
+              <h3>Colombia</h3>
+              <p class="pobulation">Population: <span>223,334</span></p>
+              <p class="region">Region: <span>Americas</span></p>
+              <p class="capital">Capital: <span>Whatever</span></p>
+            </div>
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </section>
         <!-- End of Section -->
+        <!-- start of details -->
+        <div class="background-layer"></div>
+        <div class="card-details">
+          <div class="back">
+            <i class="fa-solid fa-arrow-left-long"></i>
+            <span>Back</span>
+          </div>
+          <div class="full-info">
+            <img src="https://flagcdn.com/w320/co.png" alt="colombia flag" />
+            <div class="details">
+              <h3>Colombia</h3>
+              <div class="general">
+                <div class="col1">
+                  <p>Native Name: <span>Colombia</span></p>
+                  <p>Population: <span>11,319,511</span></p>
+                  <p>Region: <span>Americas</span></p>
+                  <p>Sub Region: <span>South America</span></p>
+                  <p>Capital: <span>Whatever</span></p>
+                </div>
+                <div class="col2">
+                  <p>Top Level Domain: <span>be</span></p>
+                  <p>Currencies: <span>Piso</span></p>
+                  <p>Languages: <span>English, Spanish</span></p>
+                </div>
+              </div>
+              <footer>
+                <span>Border Countries:</span>
+                <span class="border-country">France</span>
+                <span class="border-country">Germany</span>
+                <span class="border-country">Netherlands</span>
+              </footer>
+            </div>
+          </div>
+        </div>
+        <!-- end of details -->
       </main>
     </div>
     <!-- End of Main -->
 
     <!-- Script -->
-    <script src="./JS/main.js"></script>
+    <!-- <script src="./JS/main.js"></script> -->
   </body>
 </html>
