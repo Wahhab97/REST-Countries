@@ -126,7 +126,7 @@ main nav select {
   -ms-border-radius: 0.6em;
   -o-border-radius: 0.6em;
 }
-main nav .select ul.hidden {
+.hidden {
   display: none;
 }
 main nav .select ul {
