@@ -70,9 +70,6 @@ header .container {
   align-items: center;
 }
 @media (max-width: 767px) {
-  header {
-    max-width: calc(100% - 10px);
-  }
   header .container h2 {
     font-size: 1.2em;
   }
@@ -126,7 +123,7 @@ main nav select {
   -ms-border-radius: 0.6em;
   -o-border-radius: 0.6em;
 }
-main nav .select ul.hidden {
+.hidden {
   display: none;
 }
 main nav .select ul {
@@ -214,23 +211,24 @@ main section div .info p span {
 }
 /* end of main section */
 /* start of details */
-main .card-details {
+main .card-details .container {
   position: absolute;
-  width: 100%;
-  height: 100%;
   z-index: 15;
   top: 0;
-  left: 0;
+}
+main .card-details {
+  width: 100%;
+  height: 100%;
   background-color: var(--elements-color);
   border-top: 0.2em solid var(--background-color);
 }
 main .background-layer {
   position: absolute;
-  width: 150%;
+  width: 100%;
   height: 100%;
   z-index: 10;
   top: 0;
-  left: -20vw;
+  left: 0;
   background-color: var(--elements-color);
   border-top: 0.2em solid var(--background-color);
 }
@@ -258,9 +256,6 @@ main .card-details .full-info img {
 }
 main .card-details .full-info .details {
   width: 45%;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
 }
 main .card-details .full-info .details h3 {
   font-size: 2em;
@@ -300,15 +295,14 @@ main .card-details .full-info .details footer span.border-country {
   -o-border-radius: 0.3em;
 }
 @media (max-width: 767px) {
-  main .background-layer {
-    width: 105%;
-    left: -3%;
-  }
-  main .card-details {
+  main .card-details .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     height: calc(100vh - 90px);
   }
   main .card-details .back {
-    margin: 1em 0;
+    margin: 0.2em 0;
   }
   main .card-details .full-info {
     flex-direction: column;
@@ -317,14 +311,20 @@ main .card-details .full-info .details footer span.border-country {
   main .card-details .full-info img {
     width: 75%;
     align-self: center;
+    outline: none;
   }
   main .card-details .full-info .details {
     width: 100%;
   }
+  main .card-details .full-info .details h3 {
+    padding: 0;
+  }
   main .card-details .full-info .details .general {
     flex-direction: column;
     gap: 0;
-    /* width: 95%; */
+  }
+  main .card-details .full-info .details .general p {
+    margin-bottom: 0.2em;
   }
   main .card-details .full-info .details footer {
     margin: 0;
@@ -332,12 +332,8 @@ main .card-details .full-info .details footer span.border-country {
   }
   main .card-details .full-info .details footer span:first-of-type {
     flex-basis: 100%;
+    padding: 0;
   }
 }
-/* @media (max-width: 767px) {
-  
-  
-  
-} */
 /* end of details */
 /* End of Main */
