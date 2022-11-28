@@ -29,7 +29,7 @@
       <div class="container">
         <h2>Where in the world?</h2>
         <div class="theme">
-          <i class="fa-regular fa-sun"></i>
+          <i class="fa-regular"></i>
           <span>Light Mode</span>
         </div>
       </div>
@@ -46,6 +46,7 @@
               type="text"
               id="search"
               placeholder="Search for a country..."
+              value=""
             />
           </div>
           <div class="select">
@@ -55,11 +56,12 @@
               </option>
             </select>
             <ul class="options hidden">
-              <li data-value="africa">Africa</li>
-              <li data-value="america">America</li>
-              <li data-value="america">America</li>
-              <li data-value="europe">Europe</li>
-              <li data-value="oceania">Oceania</li>
+              <li data-value="all">All</li>
+              <li data-value="Africa">Africa</li>
+              <li data-value="Americas">Americas</li>
+              <li data-value="Asia">Asia</li>
+              <li data-value="Europe">Europe</li>
+              <li data-value="Oceania">Oceania</li>
             </ul>
           </div>
         </nav>
@@ -69,9 +71,11 @@
         <!-- End of Section -->
         <!-- start of details -->
         <div class="card-details hidden">
-          <div class="back">
-            <i class="fa-solid fa-arrow-left-long"></i>
-            <span>Back</span>
+          <div class="container">
+            <div class="back">
+              <i class="fa-solid fa-arrow-left-long"></i>
+              <span>Back</span>
+            </div>
           </div>
         </div>
         <!-- end of details -->
@@ -81,6 +85,6 @@
     <!-- End of Main -->
 
     <!-- Script -->
-    <!-- <script src="./JS/main.js"></script> -->
+    <script src="./JS/main.js"></script>
   </body>
 </html>

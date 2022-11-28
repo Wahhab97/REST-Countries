@@ -5,29 +5,30 @@
   --text-color: hsl(0, 0%, 100%);
   --input-color: hsl(209, 23%, 22%);
 }
-@media (prefers-color-scheme: light) {
+.light-mode {
+  --elements-color: hsl(0, 0%, 100%);
+  --background-color: hsl(0, 0%, 98%);
+  --text-color: hsl(200, 15%, 8%);
+  --input-color: hsl(0, 0%, 52%);
+}
+/* @media (prefers-color-scheme: light) {
   :root {
-    /* light mode */
     --elements-color: hsl(0, 0%, 100%);
     --background-color: hsl(0, 0%, 98%);
     --text-color: hsl(200, 15%, 8%);
     --input-color: hsl(0, 0%, 52%);
   }
-}
+} */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-html {
-  scroll-behavior: smooth;
 }
 body {
   font-family: "Nunito Sans", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
   position: relative;
-  overflow: hidden;
 }
 .container {
   padding-left: 15px;
@@ -74,6 +75,9 @@ header .container {
     font-size: 1.2em;
   }
 }
+header .container .theme {
+  cursor: pointer;
+}
 header .container .theme span {
   margin-left: 0.35em;
 }
@@ -100,6 +104,9 @@ main nav .search {
   -moz-border-radius: 0.6em;
   -ms-border-radius: 0.6em;
   -o-border-radius: 0.6em;
+}
+main nav .search i {
+  color: var(--text-color);
 }
 main nav input,
 main nav select {
@@ -171,6 +178,7 @@ main section {
   padding-top: 3em;
 }
 main section div {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   background-color: var(--elements-color);
