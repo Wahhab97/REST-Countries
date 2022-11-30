@@ -24,6 +24,7 @@ interface ICountryObj {
     [key:string]: string;
   }
   cca3:string;
+  [key:string]: any;
 }
 
 let lightMode = localStorage.getItem('lightMode');
@@ -98,7 +99,7 @@ let createCountries = (obj:ICountryObj[]) => {
     pList.forEach((element: string): void => {
       let p = document.createElement("p");
       let pSpan = document.createElement("span");
-      let pSpanText = document.createTextNode(countryObject[element]);
+      let pSpanText = document.createTextNode({...countryObject}[element]?? "");
       pSpan.append(pSpanText);
       let ptext = document.createTextNode(`${element.charAt(0).toUpperCase()+element.slice(1)}: `);
       p.append(ptext, pSpan);
